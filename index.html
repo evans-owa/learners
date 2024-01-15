@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bootstrap 5</title>
+</head>
+
+<body>
+    <!--navbar----->
+
+    <!-----lg --bg background color- navadrk is for text color-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Evans Learn bootcamp</a>
+
+            <!-----toggle button design according to size----->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-----MS Mean margin start and its set to auto (ul.navbar-nav)----->
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">what learnt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#school" class="nav-link">school form</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----showcase----->
+    <!--px padding on the x-axis- py padding on the y axis----- p for padding all round -----pt padding ---->
+    <section class="bg-dark text-light pt-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <!-----d-flex is for arranging compnets side by side like a row- sms is added fro the confirmation the brak epoints---->
+            <!----d-lg-flex for resizing thingd tom meet the bresk points-->
+            <div class="d-lg-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become an
+                        <span class="text-info"> house designer </span>in few weeks
+                    </h1>
+                    <p class="lead my-4">
+                        A home designer often works with existing licensed designs,
+                        then customizes those designs to suit the needs of a particular
+                        property, They may also help with architecture choices,determine
+                        the purpose of rooms,
+                    </p>
+                    <button class="btn btn-primary btn-lg m-4" data-bs-toggle="modal" data-bs-target="#enroll">
+                        Contact Us for favours
+                    </button>
+
+                </div>
+
+                <!---img-fluid bounding image into a container class----->
+                <img class="img-fluid w-50 d-none d-lg-block" src="images/room.jpg" alt="" image>
+            </div>
+
+        </div>
+    </section>
+
+    <!-----Newletter-->
+    <section class="bg-primary text-light py-4">
+        <div class="container">
+            <div class="d-sm-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Sign Up For our Promotion</h3>
+
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email" aria-label="Enter Email"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-dark btn-lg" type="button">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---End of newletter-->
+
+
+    <!--boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Virtual
+                            </h3>
+                            <p class="card-text">
+                                The best begginerr for final informatio
+                                Read at your own convenience
+                            </p>
+                            <a href="#" class="btn btn-primary">Find More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                In Person
+                            </h3>
+                            <p class="card-text">
+                                Interact with the lecture for more Insights and infor
+                            </p>
+                            <a href="#" class="btn btn-dark">Find More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Hybrid
+                            </h3>
+                            <p class="card-text">
+                                Have a balance class and work for yourself pass study
+                                at home
+                            </p>
+                            <a href="#" class="btn btn-primary">Find More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---end of boxes-->
+
+    <!--the learn Section-->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="images/augmentation.jpg" class="img-fluid" alt="image">
+                </div>
+                <div class="col-md p-5">
+                    <h3>Learn The Augmented Reality</h3>
+                    <p class="learn">
+                        Concepts on teh side of the augmented reality from the other area
+                        of formular gain the vartual reality lesson ono how to program in the virtual world
+                    </p>
+                    <p>
+                        funtional information of the Augmented reality will be in available in our channels
+                        soon than before we have to beat our timeline
+                    </p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-right">Read More</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--formular bar-->
+
+    <section id="school" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h3>Learn Secuirty</h3>
+                    <p class="learn">
+                        Get into the world of secuirty by gaining the Knowledge of securing from
+                        web-based to App based
+                    </p>
+                    <p>
+                        Cloud security made in the reality the actual student can benefit from them
+                        can be beneficial at the end and at last
+                    </p>
+                    <a href="#" class="btn btn-primary mt-3">
+                        <i class="bi bi-chevron-right">Read More</i>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="images/5gmobile.jpg" class="img-fluid" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---question section-->
+    <section id="instructors" class="p-5">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Question</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--item question one-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#instructors-One">
+                            The Course of interest
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="instructors-One" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#instructors">
+                        <div class="accordion-body">
+                            Thank you for the opportunity to apply as service desk analyst role at Sidian bank.
+                            After your job reviewing your description, it's clear that you're looking for a candidate
+                            that is
+                            extremely familiar with the capabilities associated with the role and can perform them
+                            confidently
+                            <code>.formula</code>
+                        </div>
+                    </div>
+                </div>
+                <!--item question two-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#instructors-two">
+                            How to start my couse from scratch ?
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="instructors-two" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#instructors">
+                        <div class="accordion-body">
+                            Given these requirements I am certain that I have the necessary skills to
+                            successfully do the job adeptly and perform above expectationsI am a detail-oriented
+                            professional who has been consistently praised as smart -working by my
+                            <code>.way to go</code>
+                        </div>
+                    </div>
+                </div>
+                <!--item question three-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#instructors-three">
+                            Extra laerning schedule
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="instructors-three" aria-labelledby="flush-headingThree"
+                        data-bs-parent="#instructors">
+                        <div class="accordion-body">
+                            Peers. Over the course of my years of practical, I have developed proven technical research
+                            This table provides an overview of the response rates for each department and the overall
+                            response rate for the entire institution. It appears that the School of Business has the
+                            <code>.CollapeThree .data-bs-target</code>
+                        </div>
+                    </div>
+                </div>
+                <!--item question four-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#instructors-four">
+                            Ways of payments after the courses starts
+                        </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="instructors-four" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#instructors">
+                        <div class="accordion-body">
+                            These databases, along with associated management systems, are the most developed and
+                            in the forefront of production. Every item of information in this database is related to
+                            every other piece of information.This is due to each data
+                            <code>.md-5 .py-3</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---the tutor section-->
+    <section id="tutor" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white">Our Tutors</h2>
+            <p class="lead text-center text-white mb-5">
+                Our Tutor With more than 6+ years of tutoring Experience in industry based various courses
+            </p>
+            <div class="row g-4">
+                <!---col-md means take the meduim displya screen for the allowed content to display---- lg means takes the large screen display-->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="images/IMG_20231015_114856.jpg" class="rounded-circle md-3" width="150"
+                                height="150" alt="">
+
+                            <h3 class="card-title mb-3">Evans Odhis</h3>
+                            <p class="card-text">
+                                The Editor and founder of vanseacademy organization has tailor many student from the
+                                start
+                                indusrty required students The Editor and founder of vanseacademy organization has
+                                tailor many student from the start
+                                indusrty required students
+                            </p>
+                            <!--a href="#"><i class="bi bi-twitter text-dark mx-1"></i>Twitter</a-->
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitch.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="images/face10.jpeg" class="rounded-circle md-3" width="150" height="150" alt="">
+
+                            <h3 class="card-title mb-3">Victor Ann</h3>
+                            <p class="card-text">
+                                The Editor and founder of vanseacademy organization has tailor many student from the
+                                start
+                                indusrty required students The Editor and founder of vanseacademy organization has
+                                tailor many student from the start
+                                indusrty required students
+                            </p>
+                            <!--a href="#"><i class="bi bi-twitter text-dark mx-1"></i>Twitter</a-->
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitch.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="images/HR.jpeg" class="rounded-circle md-3" width="150" height="150" alt="">
+
+                            <h3 class="card-title mb-3">Mercy Akinyi</h3>
+                            <p class="card-text">
+                                The Editor and founder of vanseacademy organization has tailor many student from the
+                                start
+                                indusrty required students The Editor and founder of vanseacademy organization has
+                                tailor many student from the start
+                                indusrty required students
+                            </p>
+                            <!--a href="#"><i class="bi bi-twitter text-dark mx-1"></i>Twitter</a-->
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitch.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="images/face12.jpeg" class="rounded-circle md-3" width="150" height="150" alt="">
+
+                            <h3 class="card-title mb-3">Edwin Otieno</h3>
+                            <p class="card-text">
+                                The Editor and founder of vanseacademy organization has tailor many student from the
+                                start
+                                indusrty required students The Editor and founder of vanseacademy organization has
+                                tailor many student from the start
+                                indusrty required students
+                            </p>
+                            <!--a href="#"><i class="bi bi-twitter text-dark mx-1"></i>Twitter</a-->
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitch.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/facebook.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/linkedin.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/instagram.svg" alt=""></a>
+                            <a href="#"><img src="node_modules/bootstrap-icons/icons/twitter.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contact and location area-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md">
+                    <h2 class="text-center md-4">
+                        contact infor
+                    </h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span>
+                            3 Garrissa Road Thika,Kiambu st Mwalimu Avenue
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Academy:</span>
+                            vanseacademy organization
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Call number:</span>
+                            +254740768005
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Calls:</span>
+                            +254757375511
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span>
+                            infor@vanseacademy.co.ke
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map">
+                        <img src="images/5glarge.jpg" class="img-fluid" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copright &copy; 2024 Evans learning from Frontend BootCamp</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5"><img
+                    src="node_modules/bootstrap-icons/icons/arrow-up-circle.svg" class="h1" alt=""></a>
+
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="enrollLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!---modal body-->
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and will get back to you</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First Name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">
+                                Last Name:
+                            </label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">
+                                Email:
+                            </label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="col-form-label">
+                                Phone:
+                            </label>
+                            <input type="number" class="form-control" id="phone">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
